@@ -1,0 +1,148 @@
+const products = [
+  {
+    id: "algarve",
+    name: "Algarve Côte Sauvage",
+    city: "Algarve",
+    category: "Nature",
+    price: 32,
+    image: "/illustration/algrave_illustration.jpg",
+    imageAlt: "Illustration vintage Algarve",
+    shortDesc: "Falaises dorées et mer turquoise dans un style affiche rétro.",
+    description:
+      "Une composition lumineuse inspirée des côtes de l'Algarve, avec ses falaises iconiques et ses eaux cristallines. Pensée comme une vraie affiche de voyage vintage.",
+  },
+  {
+    id: "algarve-2",
+    name: "Algarve Plages",
+    city: "Algarve",
+    category: "Nature",
+    price: 30,
+    image: "/illustration/algrave2_illustration.jpg",
+    imageAlt: "Illustration Algarve plages",
+    shortDesc: "Une variation ensoleillée sur les plages et la côte portugaise.",
+    description:
+      "Deuxième affiche de la série Algarve, avec une palette plus chaude et une composition centrée sur les plages de l'été portugais.",
+  },
+  {
+    id: "aveiro",
+    name: "Aveiro La Venise",
+    city: "Aveiro",
+    category: "Villes",
+    price: 29,
+    image: "/illustration/aveiro_illustration.png",
+    imageAlt: "Illustration Aveiro canaux",
+    shortDesc: "Canaux, moliceiros colorés et architecture Art Nouveau.",
+    description:
+      "Aveiro surnommée la Venise du Portugal. Cette affiche capture ses canaux calmes, ses bateaux peints à la main et ses maisons en azulejo.",
+  },
+  {
+    id: "aveiro-2",
+    name: "Aveiro Moliceiros",
+    city: "Aveiro",
+    category: "Villes",
+    price: 31,
+    image: "/illustration/aveiro2_illustration.png",
+    imageAlt: "Illustration Aveiro moliceiros",
+    shortDesc: "Les bateaux traditionnels d'Aveiro dans un rendu vintage saturé.",
+    description:
+      "Deuxième volet de la série Aveiro, mettant en scène les moliceiros avec des couleurs vives et un cadrage affiche touristique classique.",
+  },
+  {
+    id: "lisbonne",
+    name: "Lisboa Tramway",
+    city: "Lisbonne",
+    category: "Villes",
+    price: 35,
+    image: "/illustration/lisbona_illustration.png",
+    imageAlt: "Illustration Lisboa tramway",
+    shortDesc: "Le tramway jaune iconique dans les rues pentues de Lisbonne.",
+    description:
+      "Une affiche emblématique inspirée du tramway 28, symbole vivant de Lisbonne. Composition rétro avec palette chaleureuse et typographie vintage.",
+  },
+  {
+    id: "lisbonne-2",
+    name: "Lisboa Azulejos",
+    city: "Lisbonne",
+    category: "Villes",
+    price: 33,
+    image: "/illustration/lisbona2_illustation.png",
+    imageAlt: "Illustration Lisboa azulejos",
+    shortDesc: "Les carreaux bleus et blancs de Lisbonne en format affiche.",
+    description:
+      "Les azulejos sont l'âme décorative du Portugal. Cette affiche les met au centre d'une composition graphique moderne à l'esthétique ancienne.",
+  },
+  {
+    id: "porto",
+    name: "Porto Pont Dom Luís",
+    city: "Porto",
+    category: "Villes",
+    price: 34,
+    image: "/illustration/porto_illustration.jpg",
+    imageAlt: "Illustration Porto pont",
+    shortDesc: "Le pont de fer de Porto au coucher du soleil.",
+    description:
+      "Porto et son pont Dom Luís I en métal, emblème de la ville. Une affiche dramatique aux tons cuivrés inspirée des posters de voyage des années 30.",
+  },
+  {
+    id: "porto-2",
+    name: "Porto Ribeira",
+    city: "Porto",
+    category: "Villes",
+    price: 36,
+    image: "/illustration/porto2_illustration.jpg",
+    imageAlt: "Illustration Ribeira Porto",
+    shortDesc: "Les façades colorées du bord du Douro en style vintage.",
+    description:
+      "La Ribeira de Porto, classée à l'UNESCO. Cette affiche joue sur les couleurs vives des maisons et la lumière du Douro dans un rendu rétro soigné.",
+  },
+  {
+    id: "porto-nuit",
+    name: "Porto By Night",
+    city: "Porto",
+    category: "Villes",
+    price: 38,
+    image: "/illustration/portobynight.png",
+    imageAlt: "Illustration Porto nuit",
+    shortDesc: "Porto la nuit, lumières reflétées sur le fleuve Douro.",
+    description:
+      "Version nocturne de Porto avec les lumières de la ville reflétées sur le Douro. Une affiche poétique et dramatique aux tons sombres et chauds.",
+  },
+  {
+    id: "nazare",
+    name: "Nazaré Vague Géante",
+    city: "Nazaré",
+    category: "Nature",
+    price: 33,
+    image: "/illustration/nazaré_illustration.png",
+    imageAlt: "Illustration Nazaré vague",
+    shortDesc: "La vague légendaire de Nazaré en format affiche surf vintage.",
+    description:
+      "Nazaré est mondialement connue pour ses vagues géantes. Cette affiche rend hommage à ce phénomène naturel spectaculaire dans un style rétro inspiré des posters de surf des années 60.",
+  },
+  {
+    id: "lello",
+    name: "Librairie Lello Porto",
+    city: "Porto",
+    category: "Architecture",
+    price: 37,
+    image: "/illustration/livrairia_lello_1.png",
+    imageAlt: "Illustration Librairie Lello",
+    shortDesc: "L'escalier rouge et le vitrail de la librairie Lello en affiche.",
+    description:
+      "La librairie Lello est l'une des plus belles du monde. Cette affiche met en valeur son escalier rouge emblématique et ses décors Art Nouveau.",
+  },
+  {
+    id: "carte-portugal",
+    name: "Carte du Portugal",
+    city: "Portugal",
+    category: "Carte",
+    price: 28,
+    image: "/illustration/map_portugal.png",
+    imageAlt: "Carte illustrée du Portugal",
+    shortDesc: "Une carte vintage illustrée du Portugal avec ses régions.",
+    description:
+      "Une carte illustrée du Portugal au style cartographique ancien. Parfaite pour une décoration murale qui invite au voyage et à la découverte.",
+  },
+]
+
+export default products
