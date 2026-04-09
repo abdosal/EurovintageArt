@@ -6,7 +6,7 @@ import cors from 'cors'
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const app = express()
 
-app.use(cors({ origin: 'http://localhost:5175' }))
+app.use(cors({ origin: 'http://localhost:5173' }))
 app.use(express.json())
 
 app.post('/create-checkout-session', async (req, res) => {
@@ -29,8 +29,8 @@ app.post('/create-checkout-session', async (req, res) => {
       payment_method_types: ['card'],
       line_items,
       mode: 'payment',
-      success_url: 'http://localhost:5175/success',
-      cancel_url:  'http://localhost:5175/cart',
+      success_url: 'http://localhost:5173/success',
+      cancel_url:  'http://localhost:5173/cart',
     })
 
     res.json({ url: session.url })
