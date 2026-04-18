@@ -26,7 +26,7 @@ function Home() {
             <source src="/hero-bg.mp4" type="video/mp4" />
             <img
               src="/background.jpg"
-              alt="EuroVintage Art"
+              alt="Pintacueca"
               className="hero-bg-img"
             />
           </video>
@@ -35,7 +35,7 @@ function Home() {
 
         <div className="hero-content container">
           <div className="hero-tag">
-            <span className="euro-text">Euro</span>Vintage Art — Collection 2026
+            Pintacueca — Collection 2026
           </div>
           <h1 className="hero-title">
             L'Europe <em>vintage</em><br />à votre mur
@@ -101,7 +101,7 @@ function Home() {
           <div className="section-header">
             <p className="section-subtitle">Sélection</p>
             <h2>Illustrations mises en avant</h2>
-            <p>Découvrez l'univers EuroVintage Art à travers nos meilleures affiches.</p>
+            <p>Découvrez l'univers Pintacueca à travers nos meilleures affiches.</p>
           </div>
 
           <div className="featured-grid">
@@ -162,7 +162,7 @@ function Home() {
             <p className="section-subtitle">Notre concept</p>
             <h2>L'art du voyage, encadré chez vous</h2>
             <p>
-              Chaque affiche EuroVintage est dessinée dans le style des
+              Chaque affiche Pintacueca est dessinée dans le style des
               grandes affiches de voyage des années 1930-1960 —
               typographie rétro, couleurs chaudes, compositions épurées.
             </p>

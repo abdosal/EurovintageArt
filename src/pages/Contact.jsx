@@ -21,7 +21,7 @@ function Contact() {
           <h2>Coordonnées</h2>
           <div className="info-item">
             <strong>Email</strong>
-            <p>contact@eurovintage-art.com</p>
+            <p>contact@pintacueca.com</p>
           </div>
           <div className="info-item">
             <strong>Délai de réponse</strong>

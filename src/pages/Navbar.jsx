@@ -33,8 +33,8 @@ function Navbar() {
           {/* Logo */}
           <Link to="/" className="navbar-brand">
             <img
-              src="/eurovintage.png"
-              alt="EuroVintage Art"
+              src="/pintacueca.png"
+              alt="Pintacueca"
               className="navbar-logo"
             />
           </Link>
@@ -92,7 +92,7 @@ function Navbar() {
       <nav className={`mobile-menu ${menuOpen ? 'open' : ''}`} aria-label="Menu mobile">
         <div className="mobile-menu-header">
           <span className="mobile-menu-title">
-            <span className="euro-text">Euro</span>Vintage Art
+            Pintacueca
           </span>
           <button
             className="mobile-menu-close"
@@ -122,7 +122,7 @@ function Navbar() {
             🛒 Voir le panier {cartCount > 0 && `(${cartCount})`}
           </Link>
           <p className="mobile-menu-copy">
-            © {new Date().getFullYear()} <span className="euro-text">Euro</span>Vintage Art
+            © {new Date().getFullYear()} Pintacueca
           </p>
         </div>
       </nav>

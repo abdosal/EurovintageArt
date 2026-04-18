@@ -5,7 +5,7 @@ const CartContext = createContext()
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState(() => {
     try {
-      const stored = localStorage.getItem('eurovintage-cart')
+      const stored = localStorage.getItem('pintacueca-cart')
       return stored ? JSON.parse(stored) : []
     } catch {
       return []
@@ -14,7 +14,7 @@ export function CartProvider({ children }) {
 
   // Sauvegarde dans localStorage à chaque changement
   useEffect(() => {
-    localStorage.setItem('eurovintage-cart', JSON.stringify(cartItems))
+    localStorage.setItem('pintacueca-cart', JSON.stringify(cartItems))
   }, [cartItems])
 
   const addToCart = (product) => {
@@ -47,7 +47,7 @@ export function CartProvider({ children }) {
 
   const clearCart = () => {
     setCartItems([])
-    localStorage.removeItem('eurovintage-cart')
+    localStorage.removeItem('pintacueca-cart')
   }
 
   const cartTotal = cartItems.reduce(
