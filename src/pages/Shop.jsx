@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import products from '../data/products'
+import './Shop.css'
 
 function Shop() {
   const [activeFilter, setActiveFilter] = useState('Tous')

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import './Legal.css'
 
 function Legal() {
   const year = new Date().getFullYear()

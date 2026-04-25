@@ -11,6 +11,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Legal from './pages/Legal'
 import Success from './pages/Success'
+import './App.css'
 
 function App() {
   return (

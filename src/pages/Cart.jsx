@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
+import './Cart.css'
 
 function Cart() {
   const { cartItems = [], removeFromCart, updateQuantity, cartTotal = 0, clearCart } = useCart()

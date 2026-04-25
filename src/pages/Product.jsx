@@ -1,6 +1,7 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import products from '../data/products'
+import './Product.css'
 
 function Product() {
   const { id } = useParams()
