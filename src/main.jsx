@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
+import './i18n' // Import i18n pour l'initialiser
 import App from './App'
 import './index.css'
 

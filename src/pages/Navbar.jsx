@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { useCart } from '../context/CartContext'
+import LanguageSwitcher from '../components/LanguageSwitcher'
 
 function Navbar() {
   const { cartCount } = useCart()
+  const { t } = useTranslation()
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -19,10 +22,10 @@ function Navbar() {
   }, [menuOpen])
 
   const navLinks = [
-    { path: '/',        label: 'Accueil' },
-    { path: '/shop',    label: 'Boutique' },
-    { path: '/about',   label: 'À propos' },
-    { path: '/contact', label: 'Contact' },
+    { path: '/',        label: t('nav.home') },
+    { path: '/shop',    label: t('nav.shop') },
+    { path: '/about',   label: t('nav.about') },
+    { path: '/contact', label: t('nav.contact') },
   ]
 
   return (
@@ -52,9 +55,12 @@ function Navbar() {
             ))}
           </nav>
 
-          {/* Droite : panier + hamburger */}
+          {/* Droite : langue + panier + hamburger */}
           <div className="navbar-right">
-            <Link to="/cart" className="cart-icon" aria-label="Voir le panier">
+            {/* Sélecteur de langue */}
+            <LanguageSwitcher />
+
+            <Link to="/cart" className="cart-icon" aria-label={t('nav.cart')}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
                 <line x1="3" y1="6" x2="21" y2="6"/>
@@ -118,8 +124,9 @@ function Navbar() {
         </ul>
 
         <div className="mobile-menu-footer">
+          <LanguageSwitcher />
           <Link to="/cart" className="btn btn-primary btn-full" onClick={() => setMenuOpen(false)}>
-            🛒 Voir le panier {cartCount > 0 && `(${cartCount})`}
+            🛒 {t('nav.cart')} {cartCount > 0 && `(${cartCount})`}
           </Link>
           <p className="mobile-menu-copy">
             © {new Date().getFullYear()} Pintakueca

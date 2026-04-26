@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "about": "About",
+    "contact": "Contact",
+    "cart": "View cart"
+  },
+  "hero": {
+    "tag": "Pintakueca — Collection 2026",
+    "title": "Vintage Europe at your wall",
+    "description": "Authentic retro posters inspired by the most beautiful cities in Europe. 100% hand-illustrated by Rémi.",
+    "cta": "Explore the shop",
+    "story": "Our story",
+    "stat1": "+20",
+    "stat1_label": "Illustrations",
+    "stat2": "100%",
+    "stat2_label": "Originals",
+    "stat3": "5★",
+    "stat3_label": "Quality",
+    "discover": "Discover",
+    "scroll_hint": "Discover"
+  },
+  "strip": {
+    "illustrations": "Original illustrations",
+    "shipping": "Delivery 1–3 days",
+    "payment": "Secure payment",
+    "support": "Email support"
+  },
+  "featured": {
+    "eyebrow": "Selection",
+    "title": "Featured Illustrations",
+    "description": "Discover the Pintakueca universe through our best posters.",
+    "cta": "Full collection",
+    "addToCart": "+ Cart",
+    "view": "View"
+  },
+  "concept": {
+    "eyebrow": "Our concept",
+    "title": "The art of travel, framed in your home",
+    "description1": "Every Pintakueca poster is drawn in the style of the great travel posters from the 1930s–1960s — retro typography, warm colors, clean compositions.",
+    "description2": "All artworks are 100% original, illustrated by Rémi and protected by copyright.",
+    "point1": "Premium matte paper print 250g",
+    "point2": "Available sizes from A4 to 70×100 cm",
+    "point3": "Careful delivery in rigid tube",
+    "cta": "Discover the story"
+  },
+  "papier": {
+    "eyebrow": "Know-how",
+    "title": "The art of handmade paper",
+    "description": "Every Pintakueca poster is printed on handcrafted paper, rooted in a centuries-old tradition. Our natural fibers give each sheet unique texture and character — impossible to reproduce industrially.",
+    "step1_title": "Natural fibers",
+    "step1_sub": "Linen · Cotton · Hemp",
+    "step2_title": "Shaping",
+    "step2_sub": "Hand-screened frame",
+    "step3_title": "Pressing",
+    "step3_sub": "Fiber consolidation",
+    "step4_title": "Natural drying",
+    "step4_sub": "Unique texture & character"
+  },
+  "cta": {
+    "label": "Ready to decorate?",
+    "title": "Find the illustration that suits you",
+    "description": "Fast delivery · Premium printing · Secure payment",
+    "shop": "Explore the shop",
+    "contact": "Contact us"
+  },
+  "footer": {
+    "copy": "All rights reserved"
+  }
+}

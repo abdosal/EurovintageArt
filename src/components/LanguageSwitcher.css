@@ -1,0 +1,49 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  color: var(--color-text, #1a1a1a);
+  transition: all 0.2s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.lang-btn:hover {
+  opacity: 0.7;
+}
+
+.lang-btn.active {
+  border-bottom: 2px solid var(--color-text, #1a1a1a);
+  padding-bottom: 2px;
+}
+
+.lang-sep {
+  color: var(--color-text, #1a1a1a);
+  opacity: 0.3;
+  margin: 0 4px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .language-switcher {
+    gap: 6px;
+    font-size: 11px;
+  }
+
+  .lang-btn {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+}

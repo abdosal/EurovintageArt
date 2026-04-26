@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { useCart } from '../context/CartContext'
 import products from '../data/products'
 import './Home.css'
@@ -42,27 +43,30 @@ const IconDown = () => (
   </svg>
 )
 
-const STEPS = [
-  { num: '01', title: 'Fibres naturelles',  sub: 'Lin · Coton · Chanvre' },
-  { num: '02', title: 'Mise en forme',      sub: 'Cadre grillagé à la main' },
-  { num: '03', title: 'Pressage',           sub: 'Consolidation des fibres' },
-  { num: '04', title: 'Séchage naturel',    sub: 'Texture & caractère uniques' },
-]
-
-const VALUES = [
-  { icon: '🖼️', label: 'Illustrations originales' },
-  { icon: '📦', label: 'Livraison 1–3 jours' },
-  { icon: '🔒', label: 'Paiement sécurisé' },
-  { icon: '✉️', label: 'Support email' },
-]
-
 /* ══════════════════════════════════════════
    COMPOSANT PRINCIPAL
 ══════════════════════════════════════════ */
 export default function Home() {
+  const { t } = useTranslation()
   const featured = products.slice(0, 3)
   const mosaic   = products.slice(3, 7)
   const { addToCart } = useCart()
+
+  // Traductions des étapes
+  const STEPS = [
+    { num: '01', titleKey: 'papier.step1_title',  subKey: 'papier.step1_sub' },
+    { num: '02', titleKey: 'papier.step2_title',  subKey: 'papier.step2_sub' },
+    { num: '03', titleKey: 'papier.step3_title',  subKey: 'papier.step3_sub' },
+    { num: '04', titleKey: 'papier.step4_title',  subKey: 'papier.step4_sub' },
+  ]
+
+  // Traductions des valeurs
+  const VALUES = [
+    { icon: '🖼️', labelKey: 'strip.illustrations' },
+    { icon: '📦', labelKey: 'strip.shipping' },
+    { icon: '🔒', labelKey: 'strip.payment' },
+    { icon: '✉️', labelKey: 'strip.support' },
+  ]
 
   /* refs pour animations scroll */
   const [featRef, featIn]     = useInView()
@@ -113,33 +117,32 @@ export default function Home() {
             {/* Tag animé */}
             <div className="hero-tag">
               <span className="hero-tag-dot" />
-              Pintakueca — Collection 2026
+              {t('hero.tag')}
             </div>
 
             <h1 className="hero-title">
-              L'Europe <em>vintage</em><br />à votre mur
+              {t('hero.title')}
             </h1>
 
             <p className="hero-desc">
-              Affiches rétro originales inspirées des plus belles villes
-              d'Europe. 100&nbsp;% illustrées à la main par Rémi.
+              {t('hero.description')}
             </p>
 
             <div className="hero-cta">
               <Link to="/shop" className="btn btn-hero-primary">
-                Voir la boutique <IconArrow />
+                {t('hero.cta')} <IconArrow />
               </Link>
               <Link to="/about" className="btn btn-hero-ghost">
-                Notre histoire
+                {t('hero.story')}
               </Link>
             </div>
 
             {/* Chiffres clés */}
             <div className="hero-stats">
               {[
-                { value: '+20',  label: 'Illustrations' },
-                { value: '100%', label: 'Originales' },
-                { value: '5★',   label: 'Qualité' },
+                { value: t('hero.stat1'),  label: t('hero.stat1_label') },
+                { value: t('hero.stat2'), label: t('hero.stat2_label') },
+                { value: t('hero.stat3'),   label: t('hero.stat3_label') },
               ].map((s, i) => (
                 <React.Fragment key={s.label}>
                   {i > 0 && <div className="hero-stats-sep" />}
@@ -165,9 +168,9 @@ export default function Home() {
         </div>
 
         {/* Scroll indicator */}
-        <button className="hero-scroll" aria-label="Défiler vers le bas"
+        <button className="hero-scroll" aria-label={t('hero.discover')}
           onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
-          <span>Découvrir</span>
+          <span>{t('hero.scroll_hint')}</span>
           <div className="hero-scroll-track"><div className="hero-scroll-thumb" /></div>
         </button>
 
@@ -196,11 +199,11 @@ export default function Home() {
       <div className="strip">
         <div className="container strip-inner">
           {VALUES.map((v, i) => (
-            <React.Fragment key={v.label}>
+            <React.Fragment key={v.labelKey}>
               {i > 0 && <div className="strip-sep" />}
               <div className="strip-item">
                 <span className="strip-icon">{v.icon}</span>
-                {v.label}
+                {t(v.labelKey)}
               </div>
             </React.Fragment>
           ))}
@@ -219,10 +222,10 @@ export default function Home() {
 
           <header className="section-header">
             <span className="section-eyebrow">
-              <span className="eyebrow-line" />Sélection<span className="eyebrow-line" />
+              <span className="eyebrow-line" />{t('featured.eyebrow')}<span className="eyebrow-line" />
             </span>
-            <h2>Illustrations mises&nbsp;en&nbsp;avant</h2>
-            <p>Découvrez l'univers Pintakueca à travers nos meilleures affiches.</p>
+            <h2>{t('featured.title')}</h2>
+            <p>{t('featured.description')}</p>
           </header>
 
           <div className="featured-grid">
@@ -240,7 +243,7 @@ export default function Home() {
                     loading="lazy"
                   />
                   <div className="featured-card-overlay">
-                    <span>Voir l'illustration <IconArrow /></span>
+                    <span>{t('featured.view')} <IconArrow /></span>
                   </div>
                 </Link>
 
@@ -256,12 +259,12 @@ export default function Home() {
                       <button
                         className="btn btn-sm btn-outline"
                         onClick={() => addToCart(product)}
-                        aria-label={`Ajouter ${product.name} au panier`}
+                        aria-label={`${t('featured.addToCart')} ${product.name}`}
                       >
-                        + Panier
+                        {t('featured.addToCart')}
                       </button>
                       <Link to={`/product/${product.id}`} className="btn btn-sm btn-primary">
-                        Voir
+                        {t('featured.view')}
                       </Link>
                     </div>
                   </footer>
@@ -272,7 +275,7 @@ export default function Home() {
 
           <div className="section-cta">
             <Link to="/shop" className="btn btn-outline-dark">
-              Toute la collection <IconArrow />
+              {t('featured.cta')} <IconArrow />
             </Link>
           </div>
 
@@ -292,25 +295,22 @@ export default function Home() {
           {/* Texte */}
           <div className="concept-text reveal-child" style={{ '--delay': '0s' }}>
             <span className="section-eyebrow">
-              <span className="eyebrow-line" />Notre concept<span className="eyebrow-line" />
+              <span className="eyebrow-line" />{t('concept.eyebrow')}<span className="eyebrow-line" />
             </span>
-            <h2>L'art du voyage,<br />encadré&nbsp;chez&nbsp;vous</h2>
+            <h2>{t('concept.title')}</h2>
             <p>
-              Chaque affiche Pintakueca est dessinée dans le style des grandes
-              affiches de voyage des années&nbsp;1930–1960 — typographie rétro,
-              couleurs chaudes, compositions épurées.
+              {t('concept.description1')}
             </p>
             <p>
-              Toutes les œuvres sont <strong>100&nbsp;% originales</strong>,
-              illustrées par Rémi et protégées par le droit d'auteur.
+              {t('concept.description2')}
             </p>
 
             {/* Points différenciants */}
             <ul className="concept-points">
               {[
-                'Impression sur papier mat premium 250g',
-                'Format disponible de A4 à 70×100 cm',
-                'Livraison soignée dans un tube rigide',
+                t('concept.point1'),
+                t('concept.point2'),
+                t('concept.point3'),
               ].map(pt => (
                 <li key={pt}>
                   <span className="concept-point-dot" />
@@ -320,7 +320,7 @@ export default function Home() {
             </ul>
 
             <Link to="/about" className="btn btn-primary concept-cta">
-              Découvrir l'histoire <IconArrow />
+              {t('concept.cta')} <IconArrow />
             </Link>
           </div>
 
@@ -388,16 +388,13 @@ export default function Home() {
 
             <div className="papier-text-header">
               <p className="papier-eyebrow">
-                <span className="eyebrow-line" />Savoir-faire<span className="eyebrow-line" />
+                <span className="eyebrow-line" />{t('papier.eyebrow')}<span className="eyebrow-line" />
               </p>
               <h2 className="papier-title">
-                L'art du papier<br /><em>fait main</em>
+                {t('papier.title')}
               </h2>
               <p className="papier-intro">
-                Chaque affiche Pintakueca est imprimée sur un papier fabriqué
-                artisanalement, issu d'une tradition centenaire. Nos fibres naturelles
-                donnent à chaque feuille une texture et un caractère uniques — impossibles
-                à reproduire industriellement.
+                {t('papier.description')}
               </p>
             </div>
 
@@ -411,8 +408,8 @@ export default function Home() {
                     {i < STEPS.length - 1 && <div className="papier-step-connector" />}
                   </div>
                   <div className="papier-step-content">
-                    <strong>{step.title}</strong>
-                    <span>{step.sub}</span>
+                    <strong>{t(step.titleKey)}</strong>
+                    <span>{t(step.subKey)}</span>
                   </div>
                 </li>
               ))}
@@ -441,24 +438,24 @@ export default function Home() {
 
           <div className="cta-label">
             <span className="eyebrow-line" />
-            <span>Prêt à décorer&nbsp;?</span>
+            <span>{t('cta.label')}</span>
             <span className="eyebrow-line" />
           </div>
 
           <h2 className="cta-title">
-            Trouvez l'illustration<br />qui vous&nbsp;ressemble
+            {t('cta.title')}
           </h2>
 
           <p className="cta-sub">
-            Livraison rapide&nbsp;·&nbsp;Impression premium&nbsp;·&nbsp;Paiement sécurisé
+            {t('cta.description')}
           </p>
 
           <div className="cta-btns">
             <Link to="/shop" className="btn btn-hero-primary">
-              Explorer la boutique <IconArrow />
+              {t('cta.shop')} <IconArrow />
             </Link>
             <Link to="/contact" className="btn btn-hero-ghost">
-              Nous contacter
+              {t('cta.contact')}
             </Link>
           </div>
 

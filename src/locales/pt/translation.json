@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Início",
+    "shop": "Loja",
+    "about": "Sobre",
+    "contact": "Contato",
+    "cart": "Ver carrinho"
+  },
+  "hero": {
+    "tag": "Pintakueca — Coleção 2026",
+    "title": "Vintage europeu na sua parede",
+    "description": "Cartazes retrô autênticos inspirados nas mais belas cidades da Europa. 100% ilustrado à mão por Rémi.",
+    "cta": "Explorar a loja",
+    "story": "Nossa história",
+    "stat1": "+20",
+    "stat1_label": "Ilustrações",
+    "stat2": "100%",
+    "stat2_label": "Originais",
+    "stat3": "5★",
+    "stat3_label": "Qualidade",
+    "discover": "Descobrir",
+    "scroll_hint": "Descobrir"
+  },
+  "strip": {
+    "illustrations": "Ilustrações originais",
+    "shipping": "Entrega 1–3 dias",
+    "payment": "Pagamento seguro",
+    "support": "Suporte por email"
+  },
+  "featured": {
+    "eyebrow": "Seleção",
+    "title": "Ilustrações em destaque",
+    "description": "Descubra o universo Pintakueca através de nossos melhores cartazes.",
+    "cta": "Coleção completa",
+    "addToCart": "+ Carrinho",
+    "view": "Ver"
+  },
+  "concept": {
+    "eyebrow": "Nosso conceito",
+    "title": "A arte da viagem, emoldurada em sua casa",
+    "description1": "Cada cartaz Pintakueca é desenhado no estilo dos grandes cartazes de viagem dos anos 1930–1960 — tipografia retrô, cores quentes, composições limpas.",
+    "description2": "Todas as obras são 100% originais, ilustradas por Rémi e protegidas por direitos autorais.",
+    "point1": "Impressão em papel mate premium 250g",
+    "point2": "Tamanhos disponíveis de A4 a 70×100 cm",
+    "point3": "Entrega cuidadosa em tubo rígido",
+    "cta": "Descubra a história"
+  },
+  "papier": {
+    "eyebrow": "Saber-fazer",
+    "title": "A arte do papel feito à mão",
+    "description": "Cada cartaz Pintakueca é impresso em papel artesanal, enraizado em uma tradição centenária. Nossas fibras naturais conferem a cada folha textura e caráter únicos — impossível de reproduzir industrialmente.",
+    "step1_title": "Fibras naturais",
+    "step1_sub": "Linho · Algodão · Cânhamo",
+    "step2_title": "Moldagem",
+    "step2_sub": "Quadro peneirado à mão",
+    "step3_title": "Prensagem",
+    "step3_sub": "Consolidação de fibras",
+    "step4_title": "Secagem natural",
+    "step4_sub": "Textura & caráter únicos"
+  },
+  "cta": {
+    "label": "Pronto para decorar?",
+    "title": "Encontre a ilustração que combina com você",
+    "description": "Entrega rápida · Impressão premium · Pagamento seguro",
+    "shop": "Explorar a loja",
+    "contact": "Fale conosco"
+  },
+  "footer": {
+    "copy": "Todos os direitos reservados"
+  }
+}
