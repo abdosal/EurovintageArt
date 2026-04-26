@@ -113,7 +113,7 @@ export default function Home() {
             {/* Tag animé */}
             <div className="hero-tag">
               <span className="hero-tag-dot" />
-              Pintacueca — Collection 2026
+              Pintakueca — Collection 2026
             </div>
 
             <h1 className="hero-title">
@@ -181,7 +181,7 @@ export default function Home() {
             <text fontSize="10.5" fontWeight="700" letterSpacing="4" fill="rgba(255,255,255,0.35)"
               fontFamily="'DM Sans', sans-serif" textAnchor="start">
               <textPath href="#circle-text">
-                COLLECTION 2026 · PINTACUECA · VINTAGE ·
+                COLLECTION 2026 · Pintakueca · VINTAGE ·
               </textPath>
             </text>
           </svg>
@@ -222,7 +222,7 @@ export default function Home() {
               <span className="eyebrow-line" />Sélection<span className="eyebrow-line" />
             </span>
             <h2>Illustrations mises&nbsp;en&nbsp;avant</h2>
-            <p>Découvrez l'univers Pintacueca à travers nos meilleures affiches.</p>
+            <p>Découvrez l'univers Pintakueca à travers nos meilleures affiches.</p>
           </header>
 
           <div className="featured-grid">
@@ -296,7 +296,7 @@ export default function Home() {
             </span>
             <h2>L'art du voyage,<br />encadré&nbsp;chez&nbsp;vous</h2>
             <p>
-              Chaque affiche Pintacueca est dessinée dans le style des grandes
+              Chaque affiche Pintakueca est dessinée dans le style des grandes
               affiches de voyage des années&nbsp;1930–1960 — typographie rétro,
               couleurs chaudes, compositions épurées.
             </p>
@@ -394,7 +394,7 @@ export default function Home() {
                 L'art du papier<br /><em>fait main</em>
               </h2>
               <p className="papier-intro">
-                Chaque affiche Pintacueca est imprimée sur un papier fabriqué
+                Chaque affiche Pintakueca est imprimée sur un papier fabriqué
                 artisanalement, issu d'une tradition centenaire. Nos fibres naturelles
                 donnent à chaque feuille une texture et un caractère uniques — impossibles
                 à reproduire industriellement.

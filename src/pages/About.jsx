@@ -22,7 +22,7 @@ function About() {
         <div className="about-content">
           <h2>Le concept</h2>
           <p>
-            Pintacueca est une boutique d'illustrations numériques inspirées
+            Pintakueca est une boutique d'illustrations numériques inspirées
             des grandes affiches touristiques européennes d'autrefois. Chaque
             affiche est pensée pour évoquer un lieu, une lumière, une ambiance.
           </p>

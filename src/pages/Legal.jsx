@@ -21,12 +21,12 @@ function Legal() {
         {/* ── 1. Éditeur ── */}
         <section className="legal-section">
           <h2>1. Éditeur du site</h2>
-          <p>Le site <strong>Pintacueca</strong> est édité par :</p>
+          <p>Le site <strong>Pintakueca</strong> est édité par :</p>
           <ul>
             <li><strong>Nom :</strong> Rémi</li>
             <li><strong>Statut :</strong> Entrepreneur individuel (EI)</li>
             <li><strong>Adresse :</strong> porto, Portugal</li>
-            <li><strong>Email :</strong> contact@pintacueca.com</li>
+            <li><strong>Email :</strong> contact@Pintakueca.com</li>
           </ul>
         </section>
 
@@ -35,7 +35,7 @@ function Legal() {
           <h2>2. Directeur de la publication</h2>
           <p>
             Le directeur de la publication est <strong>Rémi</strong>,
-            propriétaire et créateur du site <strong>Pintacueca</strong>.
+            propriétaire et créateur du site <strong>Pintakueca</strong>.
           </p>
         </section>
 
@@ -56,7 +56,7 @@ function Legal() {
           <div className="legal-copyright-box">
             <p>
               L'ensemble des illustrations, visuels, affiches vintage et œuvres graphiques
-              présentes sur le site <strong>Pintacueca</strong> sont des créations
+              présentes sur le site <strong>Pintakueca</strong> sont des créations
               <strong> originales et uniques</strong>, conçues et réalisées
               exclusivement par <strong>Rémi</strong>.
             </p>
@@ -68,7 +68,7 @@ function Legal() {
               sans autorisation écrite préalable du propriétaire.
             </p>
             <p>
-              Les designs Pintacueca sont <strong>100 % originaux</strong> et ne peuvent
+              Les designs Pintakueca sont <strong>100 % originaux</strong> et ne peuvent
               être assimilés à aucune autre œuvre existante. Toute violation des droits d'auteur
               fera l'objet de poursuites judiciaires.
             </p>
@@ -78,7 +78,7 @@ function Legal() {
         {/* ── 5. CGV ── */}
         <section className="legal-section">
           <h2>5. Conditions générales de vente</h2>
-          <p>En passant une commande sur Pintacueca, le client accepte les conditions suivantes :</p>
+          <p>En passant une commande sur Pintakueca, le client accepte les conditions suivantes :</p>
           <ul>
             <li>Les prix sont indiqués en euros (€) toutes taxes comprises.</li>
             <li>Le paiement est sécurisé via la plateforme <strong>Stripe</strong>.</li>
@@ -99,7 +99,7 @@ function Legal() {
           <p>
             Conformément au <strong>Règlement Général sur la Protection des Données (RGPD)</strong>,
             vous disposez d'un droit d'accès, de rectification et de suppression de vos données.
-            Pour exercer ce droit : <strong>contact@pintacueca.com</strong>
+            Pour exercer ce droit : <strong>contact@Pintakueca.com</strong>
           </p>
         </section>
 
@@ -127,14 +127,14 @@ function Legal() {
           <div className="legal-signature-inner">
 
             <div className="legal-stamp">
-              Pintacueca
+              Pintakueca
             </div>
 
             <div className="legal-signature-text">
               <p className="legal-signature-label">Créateur & Propriétaire des illustrations</p>
               <p className="legal-signature-name">Rémi</p>
               <p className="legal-signature-copy">
-                © {year} <strong>Pintacueca</strong> — Toutes les illustrations
+                © {year} <strong>Pintakueca</strong> — Toutes les illustrations
                 sont des œuvres originales protégées par le droit d'auteur.
                 Reproduction interdite sans autorisation.
               </p>

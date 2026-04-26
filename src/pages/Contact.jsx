@@ -22,7 +22,7 @@ function Contact() {
           <h2>Coordonnées</h2>
           <div className="info-item">
             <strong>Email</strong>
-            <p>contact@pintacueca.com</p>
+            <p>contact@Pintakueca.com</p>
           </div>
           <div className="info-item">
             <strong>Délai de réponse</strong>

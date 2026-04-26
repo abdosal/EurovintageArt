@@ -16,7 +16,7 @@ function Success() {
         Commande confirmée !
       </h1>
       <p className="muted" style={{ maxWidth: '40ch', margin: '0 auto 2rem' }}>
-        Merci pour votre achat. Votre illustration Pintacueca
+        Merci pour votre achat. Votre illustration Pintakueca
         sera expédiée sous 5 à 7 jours ouvrés.
       </p>
       <Link to="/shop" className="btn btn-primary">
